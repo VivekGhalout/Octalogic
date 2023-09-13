@@ -80,7 +80,57 @@
         }
     ],
 
-    "course_list" : [
+    "Course_list" : [
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
         {
             "course_name" : "Classical Guitar",
             "description" : "Guitar classes for learning guitar",

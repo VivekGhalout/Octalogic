@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import Overview from './Overview'
+import Courses from './Courses'
 
 function Home() {
     return (
@@ -9,7 +10,8 @@ function Home() {
                 <Sidebar />
             </div>
             <div>
-                <Overview/>
+                {/* <Overview/> */}
+                <Courses/>
             </div>
         </div>
     )

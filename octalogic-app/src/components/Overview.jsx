@@ -94,7 +94,7 @@ function Overview() {
 
             <div className='w-[1212px]'>
                 <div className='w-[1212px] h-[22px] flex justify-between items-center'>
-                    <p className='font-bold text-[16px] text-[#83858B] leading-[21.82px]'>Latest Enrolments</p>
+                    <p className='font-bold text-[16px] text-[#83858B] leading-[21.82px]'>LATEST ENROLMENTS</p>
                     <p className='font-normal text-[14px] text-[#901E75] leading-[19px]'>View All Courses</p>
                 </div>
 
@@ -118,6 +118,43 @@ function Overview() {
                                         <td className='text-center'>{ele.course_name}</td>
                                         <td className='text-center'> $ {ele.fee}</td>
                                         <td className='text-right'>{ele.enr_date}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div className='w-[1212px]'>
+                <div className='w-[1212px] h-[22px] flex justify-between items-center'>
+                    <p className='font-bold text-[16px] text-[#83858B] leading-[21.82px]'>BEST STUDENTS</p>
+                    <p className='font-normal text-[14px] text-[#901E75] leading-[19px]'>View All Students</p>
+                </div>
+
+                <div className='bg-[#ffffff] p-[24px] mt-[16px] rounded-[6px]'>
+                    <table className='w-[1160px]'>
+                        <thead>
+                            <tr className='border-b border-[#D1D5DB] font-bold text-[14px] text-[#212529] leading-[19px]'>
+                                <th className='text-left pb-[16px] pt-[8px]'>Reg. No</th>
+                                <th >F. Name</th>
+                                <th >L. Name</th>
+                                <th >Course #</th>
+                                <th >Total Fees</th>
+                                <th className='text-right'>Reg. Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {data.Best_students.map((ele) => {
+                                return (
+                                    <tr className='border-b border-[#E5E7EB] font-normal text-[14px] text-[#212529] leading-[19px]'>
+                                        <td className='py-[8px]'>{ele.reg_no}</td>
+                                        <td className='text-center'>{ele.first_name}</td>
+                                        <td className='text-center'>{ele.last_name}</td>
+                                        <td className='text-center'>{ele.counses}</td>
+                                        <td className='text-center'>$ {ele.total_fee}</td>
+                                        <td className='text-right'>{ele.reg_date}</td>
                                     </tr>
                                 )
                             })}

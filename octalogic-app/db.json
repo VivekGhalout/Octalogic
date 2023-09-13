@@ -1,0 +1,135 @@
+{
+    "Latest_enrolments" : [
+        {
+            "enr_no" : 1563124,
+            "student_name" : "John Doe",
+            "course_name" : "Percussion",
+            "fee" : 120,
+            "enr_date" : "12-08-2023"
+        },
+        {
+            "enr_no" : 1563124,
+            "student_name" : "John Doe",
+            "course_name" : "Percussion",
+            "fee" : 120,
+            "enr_date" : "12-08-2023"
+        },
+        {
+            "enr_no" : 1563124,
+            "student_name" : "John Doe",
+            "course_name" : "Percussion",
+            "fee" : 120,
+            "enr_date" : "12-08-2023"
+        },
+        {
+            "enr_no" : 1563124,
+            "student_name" : "John Doe",
+            "course_name" : "Percussion",
+            "fee" : 120,
+            "enr_date" : "12-08-2023"
+        },
+        {
+            "enr_no" : 1563124,
+            "student_name" : "John Doe",
+            "course_name" : "Percussion",
+            "fee" : 120,
+            "enr_date" : "12-08-2023"
+        }
+    ],
+
+    "Best_students" : [
+        {
+            "reg_no" : 43422,
+            "first_name" : "John",
+            "last_name" : "Doe",
+            "counses" : 3,
+            "total_fee" : 300,
+            "reg_date" : "01-06-2023"
+        },
+        {
+            "reg_no" : 43422,
+            "first_name" : "John",
+            "last_name" : "Doe",
+            "counses" : 3,
+            "total_fee" : 300,
+            "reg_date" : "01-06-2023"
+        },
+        {
+            "reg_no" : 43422,
+            "first_name" : "John",
+            "last_name" : "Doe",
+            "counses" : 3,
+            "total_fee" : 300,
+            "reg_date" : "01-06-2023"
+        },
+        {
+            "reg_no" : 43422,
+            "first_name" : "John",
+            "last_name" : "Doe",
+            "counses" : 3,
+            "total_fee" : 300,
+            "reg_date" : "01-06-2023"
+        },
+        {
+            "reg_no" : 43422,
+            "first_name" : "John",
+            "last_name" : "Doe",
+            "counses" : 3,
+            "total_fee" : 300,
+            "reg_date" : "01-06-2023"
+        }
+    ],
+
+    "course_list" : [
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        },
+        {
+            "course_name" : "Classical Guitar",
+            "description" : "Guitar classes for learning guitar",
+            "instructor" : "Ms. Jane Doe",
+            "instrument" : "Guitar",
+            "day_of_week" : "Wednesday",
+            "total_students" : 26,
+            "price" : 60,
+            "status" : "Active"
+        }
+    ]
+}

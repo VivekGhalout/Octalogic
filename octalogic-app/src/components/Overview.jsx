@@ -1,4 +1,5 @@
 import React from 'react'
+import data from '../../db.json'
 
 function Overview() {
     return (
@@ -88,7 +89,42 @@ function Overview() {
                     </div>
                 </div>
 
-                
+
+            </div>
+
+            <div className='w-[1212px]'>
+                <div className='w-[1212px] h-[22px] flex justify-between items-center'>
+                    <p className='font-bold text-[16px] text-[#83858B] leading-[21.82px]'>Latest Enrolments</p>
+                    <p className='font-normal text-[14px] text-[#901E75] leading-[19px]'>View All Courses</p>
+                </div>
+
+                <div className='bg-[#ffffff] p-[24px] mt-[16px] rounded-[6px]'>
+                    <table className='w-[1160px]'>
+                        <thead>
+                            <tr className='border-b border-[#D1D5DB] font-bold text-[14px] text-[#212529] leading-[19px]'>
+                                <th className='text-left pb-[16px] pt-[8px]'>Enr. No</th>
+                                <th >S. Name</th>
+                                <th >C. Name</th>
+                                <th >Fees</th>
+                                <th className='text-right'>Enr. Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {data.Latest_enrolments.map((ele) => {
+                                return (
+                                    <tr className='border-b border-[#E5E7EB] font-normal text-[14px] text-[#212529] leading-[19px]'>
+                                        <td className='py-[8px]'>{ele.enr_no}</td>
+                                        <td className='text-center'>{ele.student_name}</td>
+                                        <td className='text-center'>{ele.course_name}</td>
+                                        <td className='text-center'> $ {ele.fee}</td>
+                                        <td className='text-right'>{ele.enr_date}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </div>
     )

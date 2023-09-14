@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from './Sidebar'
 import Overview from './Overview'
 import Courses from './Courses'
 
 function Home() {
+    const [page, setPage] = useState("Home")
+
     return (
         <div className='flex'>
             <div>
-                <Sidebar />
+                <Sidebar page={page} setPage={setPage}/>
             </div>
             <div>
-                {/* <Overview/> */}
-                <Courses/>
+                {
+                    page === "Home" ? <Overview/> : <Courses/>
+                }                
             </div>
         </div>
     )

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import data from '../../db.json'
+import {useSelector} from 'react-redux'
 
 function Courses() {
     const [showModal, setShowModal] = useState(false);
+
+    const Course_list = useSelector(data => data.Course_list)
 
     return (
         <div className='w-[1284px] h-[1024px] border-2 px-[36px] py-[24px] gap-[32px] flex flex-col bg-[#E5E7EB]'>
@@ -40,7 +42,7 @@ function Courses() {
                             </tr>
                         </thead>
                         <tbody>
-                            {data.Course_list.map((ele) => {
+                            {Course_list.map((ele) => {
                                 return (
                                     <tr className='border-b border-[#E5E7EB] font-normal text-[14px] text-[#212529] leading-[19px]'>
                                         <td className='py-[8px]'>{ele.course_name}</td>

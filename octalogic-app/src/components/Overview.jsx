@@ -1,7 +1,12 @@
 import React from 'react'
-import data from '../../db.json'
+import {useSelector} from 'react-redux'
 
 function Overview() {
+
+    const Latest_enrolments = useSelector(data => data.Latest_enrolments);
+
+    const Best_students = useSelector(data => data.Best_students);
+
     return (
         <div className='w-[1284px] h-[1024px] border-2 px-[36px] py-[24px] gap-[32px] flex flex-col bg-[#E5E7EB]'>
             <div className='font-bold text-[28px] text-[#83858B] leading-[38.19px]'>
@@ -110,7 +115,7 @@ function Overview() {
                             </tr>
                         </thead>
                         <tbody>
-                            {data.Latest_enrolments.map((ele) => {
+                            {Latest_enrolments.map((ele) => {
                                 return (
                                     <tr className='border-b border-[#E5E7EB] font-normal text-[14px] text-[#212529] leading-[19px]'>
                                         <td className='py-[8px]'>{ele.enr_no}</td>
@@ -146,7 +151,7 @@ function Overview() {
                             </tr>
                         </thead>
                         <tbody>
-                            {data.Best_students.map((ele) => {
+                            {Best_students.map((ele) => {
                                 return (
                                     <tr className='border-b border-[#E5E7EB] font-normal text-[14px] text-[#212529] leading-[19px]'>
                                         <td className='py-[8px]'>{ele.reg_no}</td>

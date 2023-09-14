@@ -3,8 +3,13 @@ import {useSelector} from 'react-redux'
 
 function Courses() {
     const [showModal, setShowModal] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const Course_list = useSelector(data => data.Course_list)
+
+    const filteredCourseList = Course_list.filter((course) =>
+        course.course_name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     return (
         <div className='w-[1284px] h-[1024px] border-2 px-[36px] py-[24px] gap-[32px] flex flex-col bg-[#E5E7EB]'>
@@ -21,7 +26,7 @@ function Courses() {
                                 <path d="M6.33333 2C7.4826 2 8.58481 2.45655 9.39746 3.2692C10.2101 4.08186 10.6667 5.18406 10.6667 6.33333C10.6667 7.40667 10.2733 8.39333 9.62667 9.15333L9.80667 9.33333H10.3333L13.6667 12.6667L12.6667 13.6667L9.33333 10.3333V9.80667L9.15333 9.62667C8.36703 10.2978 7.36714 10.6666 6.33333 10.6667C5.18406 10.6667 4.08186 10.2101 3.2692 9.39746C2.45655 8.58481 2 7.4826 2 6.33333C2 5.18406 2.45655 4.08186 3.2692 3.2692C4.08186 2.45655 5.18406 2 6.33333 2ZM6.33333 3.33333C4.66667 3.33333 3.33333 4.66667 3.33333 6.33333C3.33333 8 4.66667 9.33333 6.33333 9.33333C8 9.33333 9.33333 8 9.33333 6.33333C9.33333 4.66667 8 3.33333 6.33333 3.33333Z" fill="#83858B" />
                             </svg>
                         </span>
-                        <input type="search" placeholder='Search' className='outline-0 font-normal text-[12px] leading-[16.37px] text-[#83858B]' />
+                        <input type="search" placeholder='Search' className='outline-0 font-normal text-[12px] leading-[16.37px] text-[#83858B]' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
                     </div>
 
                 </div>
@@ -42,7 +47,7 @@ function Courses() {
                             </tr>
                         </thead>
                         <tbody>
-                            {Course_list.map((ele) => {
+                            {filteredCourseList.map((ele) => {
                                 return (
                                     <tr className='border-b border-[#E5E7EB] font-normal text-[14px] text-[#212529] leading-[19px]'>
                                         <td className='py-[8px]'>{ele.course_name}</td>
